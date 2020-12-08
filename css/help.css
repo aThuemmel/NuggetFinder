@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat-Bold-webfont.eot');
+    src: url('../fonts/Caveat-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Caveat-Bold-webfont.woff2') format('woff2'), url('../fonts/Caveat-Bold-webfont.woff') format('woff'), url('../fonts/Caveat-Bold-webfont.ttf') format('truetype'), url('../fonts/Caveat-Bold-webfont.svg#Caveat') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat-Regular-webfont.eot');
+    src: url('../fonts/Caveat-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Caveat-Regular-webfont.woff2') format('woff2'), url('../fonts/Caveat-Regular-webfont.woff') format('woff'), url('../fonts/Caveat-Regular-webfont.ttf') format('truetype'), url('../fonts/Caveat-Regular-webfont.svg#Caveat') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* normal behaviour */
+
+.help_background {
+	position: absolute;
+
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+
+	color: #656565;
+	background-color: rgba(255, 255, 255, 0.85);
+
+	font-family: 'Caveat', Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+
+	line-height: 35px;
+
+	display: none;
+
+	z-index: 10000;
+}
+
+
+.help_close_container {
+	position: absolute;
+
+	right: 20px;
+	bottom: 20px;
+
+	width: 30px;
+	height: 30px;
+
+	z-index: 30;
+}
+
+.help_close_container i {
+	font-size: 28px;
+	font-weight: normal;
+
+	cursor: pointer;
+}
+
+.help_close_container i:hover {
+	color: #4b4b4b;
+}
+
+.help_text_close {
+
+}
+
+.help_background_language {
+	position: absolute;
+
+	top: 65px;
+	right: 50px;
+
+	width: 250px;
+	height: 200px;
+
+	padding: 70px 0px 0px 0px;
+
+	text-align: right;
+
+	background-image: url( '../images/help_background_top.png' );
+	background-repeat: no-repeat;
+	background-position: 130px top;
+}
+
+.help_background_close {
+	position: absolute;
+
+	bottom: 10px;
+	right: 60px;
+
+	width: 500px;
+	height: 40px;
+
+	padding: 0px 65px 0px 0px;
+
+	text-align: right;
+
+	background-image: url( '../images/help_background_left.png' );
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.help_background_back_to_base {
+	position: absolute;
+
+	top: 65px;
+	left: 50px;
+
+	width: 250px;
+	height: 200px;
+
+	padding: 70px 0px 0px 0px;
+
+	background-image: url( '../images/help_background_top.png' );
+	background-repeat: no-repeat;
+	background-position: 50px top;
+
+	display: none;
+}
+
+/*
+.help_background_language_big::first-line,
+.help_background_close_big::first-line,
+.help_background_back_to_base_big::first-line {
+    font-size: 40px;
+    line-height: 45px;
+}
+*/
+
+.help_background_big {
+	display: none;
+}
+
+.help_background_application_big {
+	position: absolute;
+
+	top: 345px;
+	left: 50%;
+
+	margin-left: -520px;
+
+	width: 250px;
+	height: 200px;
+
+	padding: 0px 65px 0px 0px;
+
+	text-align: right;
+
+	background-image: url( '../images/help_background_left.png' );
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.help_background_search_big {
+	position: absolute;
+
+	top: 345px;
+	left: 50%;
+
+	margin-left: 270px;
+
+	width: 250px;
+	height: 200px;
+
+	padding: 0px 0px 0px 75px;
+
+	background-image: url( '../images/help_background_right.png' );
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.help_background_open_nugget_big {
+	position: absolute;
+
+	top: 345px;
+	left: 50%;
+
+	margin-left: -460px;
+
+	width: 250px;
+	height: 200px;
+
+	padding: 0px 65px 0px 0px;
+
+	text-align: right;
+
+	background-image: url( '../images/help_background_left.png' );
+	background-repeat: no-repeat;
+	background-position: right top;
+
+	display: none;
+}
+
+.help_background_share_nugget_big {
+	position: absolute;
+
+	top: 545px;
+	left: 50%;
+
+	margin-left: 215px;
+
+	width: 280px;
+	height: 200px;
+
+	padding: 0px 0px 0px 75px;
+
+	background-image: url( '../images/help_background_right.png' );
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	display: none;
+}
+
+/*
+.help_background_application_big::first-line,
+.help_background_search_big::first-line,
+.help_background_open_nugget_big::first-line,
+.help_background_share_nugget_big::first-line {
+    font-size: 40px;
+    line-height: 45px;
+}
+*/
+
+.help_background_small {
+	position: absolute;
+
+	top: 0px;
+	bottom: 20px;
+
+	left: 20px;
+	right: 20px;
+}
+
+@media ( min-width: 560px ) {
+
+	.help_background_small {
+		left: 50%;
+		margin-left: -260px;
+		width: 520px;
+	}
+}
+
+@media ( min-width: 1070px ) {
+
+	.help_background_big {
+		display: block;
+	}
+
+	.help_background_small {
+		display: none;
+	}
+}
+
+.help_background_application_small {
+	position: absolute;
+
+	top: 400px;
+	left: 0px;
+
+	width: 300px;
+	height: 170px;
+
+	padding: 70px 0px 0px 0px;
+
+	background-image: url( '../images/help_background_small_left.png' );
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.help_background_search_small {
+	position: absolute;
+
+	top: 400px;
+	right: 0px;
+
+	width: 300px;
+	height: 300px;
+
+	padding: 140px 0px 0px 0px;
+
+	text-align: right;
+
+	background-image: url( '../images/help_background_small_right.png' );
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.help_background_open_nugget_small {
+	position: absolute;
+
+	top: 0px;
+	left: 50px;
+
+	width: 200px;
+	height: 300px;
+
+	padding: 70px 0px 0px 0px;
+
+	background-image: url( '../images/help_background_small_left.png' );
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	display: none;
+}
+
+.help_background_share_nugget_small {
+	position: absolute;
+
+	top: 0px;
+	right: 30px;
+
+	width: 200px;
+	height: 300px;
+
+	padding: 140px 0px 0px 0px;
+
+	text-align: right;
+
+	background-image: url( '../images/help_background_small_right.png' );
+	background-repeat: no-repeat;
+	background-position: right top;
+
+	display: none;
+}
+
+/*
+.help_background_application_small::first-line,
+.help_background_search_small::first-line,
+.help_background_open_nugget_small::first-line,
+.help_background_share_nugget_small::first-line {
+    font-size: 40px;
+    line-height: 45px;
+}
+*/
+
+/* helper - text for small screens */
+
+.help_resize_required {
+	position: absolute;
+
+	top: 150px;
+
+	width: 100%;
+
+	padding: 0px 40px 0px 40px;
+
+	text-align: center;
+
+	display: none;
+}
+
+/* small screen = no help */
+
+@media (max-width: 600px) {
+
+	#sub_menu_main_help {
+		display: none !important;
+	}
+
+	#help_background {
+		display: none !important;
+	}
+}
+
+/* not height enough - show special text */
+
+@media (max-height: 750px) {
+
+	.help_resize_required {
+		display: block !important;
+	}
+
+	.help_background_language,
+	.help_background_back_to_base,
+	.help_background_big,
+	.help_background_small {
+		display: none !important;
+	}
+}
